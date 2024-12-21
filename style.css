@@ -1,0 +1,250 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; 
+}
+/* CSS Variables */
+:root{
+    --navbar-hight:59px
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+#navbar::before{
+    /* :before pseudo-element inserts some content before the content of the specified element.  */
+    content: "";
+    background-color: rgb(14, 14, 14);;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    }
+
+/* Navigation bar:Logo and image */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 54px;
+    margin: 3px 6px;
+
+}
+/* Navigation bar:List styling */
+ 
+#navbar ul{
+    display: flex;
+    
+    font-family: "Bree Serif", serif; 
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+ color: white;
+ display: block;
+ padding: 3px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 630px;
+
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url('../pexels..jpg') no-repeat center center/cover;
+    height: 710px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+    }
+    #home h3{
+        color: white;
+        text-align:center ;
+        /* relative to html:root rem */
+         /* font-size: 1.5rem; */
+         font-family: "Bree Serif", serif;
+            
+        
+
+    }
+    #home p{
+        color: white;
+        text-align:center ;
+        /* relative to html:root rem */
+         font-size: 1.5rem;
+         font-family: "Bree Serif", serif;
+
+    }
+    /* services section */
+    #services{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+         height: 100%;
+        width: 100%;   
+    }
+    
+   
+    #services .box{
+         /* height: 100%;
+        width: 100%;  */
+        border: 2px solid brown;
+        padding: 34px;
+        margin: 2px 6px;
+         margin-bottom: 20px; 
+        margin-top: 20px; 
+        border-radius: 30px;
+        background:#9b7b2188;
+        color: black;
+        background-color: rgba(165, 151, 42, 0.155)
+       
+    }
+    #services .box img{
+         height: 100px;
+         margin: auto;
+         display: block;
+         
+    }
+    #services .box p{
+
+        font-family: "Bree Serif", serif; 
+
+    } 
+    /* client section */
+    #client-section{
+        position: relative;
+       
+      
+         
+    }
+    #client-section::before{
+        content:"" ;
+        position: absolute;
+        background: url('../pexels..jpg');
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    #clients{
+        display: flex;
+         justify-content: center;
+         align-items: center;  
+    }
+    .client-item{
+        padding: 34px;
+    }
+
+    #clients img{
+        height: 124px;
+    }
+
+    
+/* Contact section */
+#contact{
+    position: relative;
+}
+/* ::before-pseudo selector */
+#contact::before{
+content: "";
+position:absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url('/cont..jpeg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif; 
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+      /* utility classes /You can display different types of headings at different places just by adding a class */
+    .h-primary { 
+        font-size: 2.8rem;
+        padding: 34px;
+        font-family: "Bree Serif", serif;
+    
+
+    }
+    
+     .hp-primary{
+        display: flex;
+        font-size: 1.8rem;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        font-family: "Bree Serif", serif;
+}
+   
+    
+    .h-secondry{ 
+        font-size: 2.3rem;
+        padding: 5px;
+        font-family: "Bree Serif", serif;
+    }
+.btn{
+    padding: 4px 10px;
+    border: 2px solid white;
+    background-color: brown ;
+    color: white;
+    margin: 8px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
